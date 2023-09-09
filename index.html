@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devlop a simple calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div id="wraper">
+        
+        <div class="container">
+            <h1>Simple Calculator</h1>
+            <div class="calculator-wraper">
+                <div class="display">
+                    <input id="display" type="text">
+                </div>
+                <div class="btn-container">
+                    <button class="other" onclick="btnHandelar('(')">(</button>
+                    <button class="other" onclick="btnHandelar(')')">)</button>
+                    <button class="other" onclick="btnHandelar('%')">%</button>
+                    <button class="equal" onclick="btnHandelarClear()">AC</button>
+                </div>
+                <div class="btn-container">
+                    <button onclick="btnHandelar('7')">7</button>
+                    <button onclick="btnHandelar('8')">8</button>
+                    <button onclick="btnHandelar('9')">9</button>
+                    <button class="same"  onclick="btnHandelar('/')">&#247;</button>
+                </div>
+                <div class="btn-container">
+                    <button onclick="btnHandelar('4')">4</button>
+                    <button onclick="btnHandelar('5')">5</button>
+                    <button onclick="btnHandelar('6')">6</button>
+                    <button class="same" onclick="btnHandelar('*')">*</button>
+                </div>
+                <div class="btn-container">
+                    <button onclick="btnHandelar('1')">1</button>
+                    <button onclick="btnHandelar('2')">2</button>
+                    <button onclick="btnHandelar('3')">3</button>
+                    <button class="same"  onclick="btnHandelar('-')">-</button>
+                </div>
+                <div class="btn-container">
+                    <button onclick="btnHandelar('0')">0</button>
+                    <button onclick="btnHandelar('.')">.</button>
+                    <button class="equal" onclick="btnHandelarResult()">=</button>
+                    <button class="same"  onclick="btnHandelar('+')">+</button>
+                </div>
+            </div>
+            
+            <hr>
+            <h2>Photo upload</h3>
+            <div class="file-container">
+                <div class="file-wraper file">
+                    <div class="icon">
+                        <i class="fa-solid fa-folder-tree"></i>
+                    </div>
+                    <h2 id="drag-text" class="shadow">Drag & Drop <br>OR</h2> 
+                    
+                    <button>Browse File</button>
+                    <input id="drag-input-file" type="file" hidden>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+    
+    <script src="app.js"></script>
+</body>
+</html> 

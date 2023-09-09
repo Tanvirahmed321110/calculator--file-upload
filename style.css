@@ -1,0 +1,104 @@
+
+.container{
+    width: 60%;
+    background-color: antiquewhite;
+    margin: 50px auto;
+    text-align: center;
+    padding: 15px;
+}
+
+  
+.calculator-wraper {
+    box-shadow: 0px 5px 7px  rgb(138, 127, 127);
+    width: 260px;
+    margin: 0 auto;
+}
+.calculator-wraper:hover{
+    background-color: rgb(206, 212, 212);
+}
+
+button{
+    width: 60px;
+    padding: 10px 6px;
+    cursor: pointer;
+    margin: 2px 0px;
+    font-weight: 600;
+    font-size: 1.12em;
+    background-color: rgb(180, 78, 78);
+}
+
+.display input {
+    width: 245px;
+    height: 50px;
+    border-radius: 4px;
+    color: blue;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    border: 2px solid rgb(218, 169, 216);
+}
+
+.equal{
+    background-color: orange;
+}
+.same{
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+}
+.other{
+    background-color: rgb(79, 83, 83);
+    color: rgb(230, 224, 224);
+}
+
+
+
+
+
+/* file upload  */
+
+.file-wraper{
+    border: 2px dotted rgb(151, 151, 151);
+    border-radius: 4px;
+    width: 50%;
+    height: 300px;
+    padding: 25px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:0px;
+}
+.file-wraper button{
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(189, 189, 186);
+    border-radius: 4px;
+    color: brown;
+}
+.shadow{
+    font-weight: 500;
+    font-size: 1.7em;
+    text-shadow: -1px -1px rgb(173, 165, 165), -1px 1px rgb(75, 71, 71), 1px -1px rgb(224, 208, 208), 1px 1px rgb(139, 122, 122);
+}
+.icon i{
+    font-size: 4em;
+    color: brown;
+}
+
+.cursor{
+    position: fixed;
+    /* transform: translate(-50%,-50%); */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: red;
+    transition: .2s;
+    pointer-events: none;
+    /* mix-blend-mode: difference; */
+}
